@@ -1,3 +1,4 @@
+using Assets.CodeBase.Infrastructure.Factory;
 using Assets.CodeBase.Logic;
 using UnityEngine;
 

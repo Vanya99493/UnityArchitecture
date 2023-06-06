@@ -1,4 +1,4 @@
-﻿namespace Assets.CodeBase.Infrastructure
+﻿namespace Assets.CodeBase.Infrastructure.Factory
 {
     public interface IExitableState
     {

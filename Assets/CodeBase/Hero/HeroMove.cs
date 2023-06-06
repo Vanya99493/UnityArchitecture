@@ -1,4 +1,5 @@
 using Assets.CodeBase.Infrastructure;
+using Assets.CodeBase.Infrastructure.Services;
 using Assets.CodeBase.Services.Input;
 using UnityEngine;
 
@@ -13,7 +14,7 @@ namespace Assets.CodeBase.Hero
 
         private void Awake()
         {
-            _inputService = Game.InputService;
+            _inputService = AllServices.Container.Single<IInputService>();
         }
 
         private void Update()

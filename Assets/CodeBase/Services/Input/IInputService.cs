@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using Assets.CodeBase.Infrastructure.Services;
+using UnityEngine;
 
 namespace Assets.CodeBase.Services.Input
 {
-    public  interface IInputService
+    public  interface IInputService : IService
     {
         Vector2 Axis { get; }
 
