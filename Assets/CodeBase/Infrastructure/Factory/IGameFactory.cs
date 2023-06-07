@@ -1,7 +1,7 @@
-﻿using Assets.CodeBase.Infrastructure.Services;
+﻿using CodeBase.Infrastructure.Services;
 using UnityEngine;
 
-namespace Assets.CodeBase.Infrastructure.Factory
+namespace CodeBase.Infrastructure.Factory
 {
     public interface IGameFactory : IService
     {

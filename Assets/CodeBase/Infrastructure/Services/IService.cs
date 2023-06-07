@@ -1,4 +1,4 @@
-﻿namespace Assets.CodeBase.Infrastructure.Services
+﻿namespace CodeBase.Infrastructure.Services
 {
     public interface IService
     {

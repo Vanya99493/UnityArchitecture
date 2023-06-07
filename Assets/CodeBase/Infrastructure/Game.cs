@@ -1,8 +1,8 @@
-﻿using Assets.CodeBase.Infrastructure.Factory;
-using Assets.CodeBase.Infrastructure.Services;
-using Assets.CodeBase.Logic;
+﻿using CodeBase.Infrastructure.Services;
+using CodeBase.Infrastructure.States;
+using CodeBase.Logic;
 
-namespace Assets.CodeBase.Infrastructure
+namespace CodeBase.Infrastructure
 {
     public class Game
     {

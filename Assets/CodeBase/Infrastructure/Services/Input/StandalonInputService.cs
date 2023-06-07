@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.CodeBase.Services.Input
+namespace CodeBase.Infrastructure.Services.Input
 {
     public class StandalonInputService : InputService
     {

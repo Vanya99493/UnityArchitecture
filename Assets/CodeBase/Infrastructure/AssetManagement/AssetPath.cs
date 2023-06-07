@@ -1,4 +1,4 @@
-﻿namespace Assets.CodeBase.Infrastructure.AssetManagement
+﻿namespace CodeBase.Infrastructure.AssetManagement
 {
     public static class AssetPath
     {

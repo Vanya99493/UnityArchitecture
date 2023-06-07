@@ -1,8 +1,9 @@
-﻿using Assets.CodeBase.CameraLogic;
-using Assets.CodeBase.Logic;
+﻿using CodeBase.CameraLogic;
+using CodeBase.Infrastructure.Factory;
+using CodeBase.Logic;
 using UnityEngine;
 
-namespace Assets.CodeBase.Infrastructure.Factory
+namespace CodeBase.Infrastructure.States
 {
     public class LoadLevelState : IPayloadedState<string>
     {

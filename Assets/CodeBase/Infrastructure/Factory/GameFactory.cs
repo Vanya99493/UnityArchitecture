@@ -1,7 +1,7 @@
-﻿using Assets.CodeBase.Infrastructure.AssetManagement;
+﻿using CodeBase.Infrastructure.AssetManagement;
 using UnityEngine;
 
-namespace Assets.CodeBase.Infrastructure.Factory
+namespace CodeBase.Infrastructure.Factory
 {
     public class GameFactory : IGameFactory
     {
