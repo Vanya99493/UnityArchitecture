@@ -10,7 +10,7 @@ namespace CodeBase.Infrastructure.States
 {
     public class GameStateMachine
     {
-        private Dictionary<Type, IExitableState> _states;
+        private readonly Dictionary<Type, IExitableState> _states;
         private IExitableState _activeState;
 
         public GameStateMachine(SceneLoader sceneLoader, LoadingCurtain curtain, AllServices services)
@@ -18,7 +18,7 @@ namespace CodeBase.Infrastructure.States
             _states = new Dictionary<Type, IExitableState>()
             {
                 [typeof(BootstrapState)] = new BootstrapState(this, sceneLoader, services),
-                [typeof(LoadLevelState)] = new LoadLevelState(this, sceneLoader, curtain, services.Single<IGameFactory>()),
+                [typeof(LoadLevelState)] = new LoadLevelState(this, sceneLoader, curtain, services.Single<IGameFactory>(), services.Single<IPersistentProgressService>()),
                 [typeof(LoadProgressState)] = new LoadProgressState(this, services.Single<IPersistentProgressService>(), services.Single<ISavedLoadService>()),
                 [typeof(GameLoopState)] = new GameLoopState(this)
             };
